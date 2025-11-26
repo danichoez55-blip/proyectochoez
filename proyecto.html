@@ -1,0 +1,619 @@
+<HTML>
+<HEAD>
+<TITLE>Proyecto de informática</TITLE>
+</HEAD>
+<style>
+@keyframes blink {
+  0% { border-color: red; }
+  50% { border-color: yellow; }
+  100% { border-color: red; }
+}
+
+.borde-parpadeante {
+  border: 2px solid red;
+  animation: blink 1s infinite alternate;
+}
+</style>
+<BODY>
+<CENTER><H1>PROYECTO AREA DE INFORMATICA </H1></CENTER>
+<CENTER><H2><FONT COLOR="red">UNIDAD</FONT>
+<FONT COLOR="blue">EDUCATIVA</FONT> 
+<FONT COLOR="yellow">"NICOLAS</FONT> 
+<FONT COLOR="orange">INFANTE</FONT> 
+<FONT COLOR="brown">DIAZ"</FONT></H2></CENTER>
+<CENTER><img src="C:\Users\USER1\Desktop\escudo.jpg" alt="nicolas" width="150px" height="150px" style="border: 2px solid orange;" class="borde-parpadeante">----<img src="C:\Users\USER1\Desktop\busto.gif"alt="nicolas" width="150px" height="150px" style="border: 8px dotted orange;" class="borde-parpadeante"></CENTER>  
+<HR>
+<H3><A NAME="MATER">MATERIAS</A></H3>
+<UL>
+ <LI><A HREF="#diseño"><FONT COLOR="green">DISEÑO WEB</FONT></A>
+<LI><A HREF="#programa"><FONT COLOR="yellow">PROGRAMACION Y BASE DE DATOS</FONT></A>
+<LI><A HREF="#sistemas"><FONT COLOR="orange">SISTEMAS OPERATIVOS</FONT></A>
+<LI><A HREF="#soporte"><FONT COLOR="red">SOPORTE TECNICO</FONT></A>
+</UL>
+
+<H3><A NAME="diseño"><FONT COLOR="green">DISEÑO WEB - TRIMESTRES</FONT></A></H3>
+<H3><A NAME="Trim">Trimestres</A></H3>
+<UL>
+ <LI><A HREF="#uno">Trimestre#1</A>
+<LI><A HREF="#dos">Trimestre#2</A>
+<LI><A HREF="#tres">Trimeste#3</A>
+</UL>
+<H3><A NAME="uno">Timestre#1</A></H3>
+<P>Esta es el Trimestre#1 Diseño WEB</P>
+
+<P><H5>TEMA-1:Que es una pagina web.</H5></P>
+Una página web es un documento digital accesible a través de internet, que contiene información como texto, imágenes, videos y otros elementos multimedia. Es la unidad básica de un sitio web y puede ser visitada por cualquier persona con un navegador web. 
+
+<P><H5>TEMA-2:Que es HTML</H5></P>
+HTML, siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar para crear páginas web. Define la estructura y el contenido de una página web mediante etiquetas que indican cómo debe mostrarse el texto, imágenes, enlaces y otros elementos. No es un lenguaje de programación en sí mismo, sino un lenguaje de marcado, lo que significa que se utiliza para estructurar el contenido y no para realizar operaciones lógicas. 
+
+
+<P><H5>TEMA-3:Estilo de Texto</H5></P>
+Se puede controlar el color del texto utilizando el elemento <FONT> con el atributo COLOR="xxx", donde "xxx" es el nombre en inglés del color que se desea. Hay que tener presente que algunos no se verán o se verán mal si la máquina no soporta, por lo menos, 256 colores.
+<P>Click aqui para <A href="#Trim">volver a la seccion de trimestres</A>
+
+<P><H5>TEMA-4:Enlaces</H5></P>
+
+<H3><A NAME="dos">Timestre2#</A></H3>
+<P>Esta es el Trimestre#2 Diseño WEB</P>
+ <iframe src="trimestre2.html" width="100%" height="500px"></iframe>
+<P>FORMULARIO
+</iframe>
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; /* Fondo general suave */
+        }
+        .form-container {
+
+           
+            background: white;
+
+            border: 1px solid #333;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 0.9em;
+        }
+        .header h3 {
+            margin: 5px 0 0 0;
+            font-size: 1.3em;
+            color: #d32f2f; /* Color de acento de la institución */
+        }
+
+        /* Estilos de la Tabla Principal */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        td {
+            border: 1px solid #333;
+            padding: 0; 
+            vertical-align: top;
+            background-color: white; /* Fondo blanco para todas las celdas de datos */
+        }
+        
+        /* Estilo para los títulos de sección (fondo gris) */
+        .section-title {
+            background-color: pink; /* Fondo gris claro */
+            font-weight: bold;
+            text-align: left;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        /* Estilo para el título especial de autorización (fondo amarillo) */
+        .auth-title {
+            background-color: #ffffe0; /* Amarillo pálido para destacar */
+            font-weight: bold;
+            text-align: left;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+        
+        /* Contenedor interno de cada celda para alinear campos */
+        .field-group {
+            display: flex;
+            align-items: flex-end;
+            padding: 3px 5px;
+            min-height: 25px;
+        }
+        .field-group label {
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-right: 5px;
+            white-space: nowrap;
+            color: #333;
+        }
+        .field-group input[type="text"],
+        .field-group input[type="email"],
+        .field-group input[type="date"],
+        .field-group input[type="tel"] {
+            border: none;
+            border-bottom: 1px solid #000; /* La línea de llenado (como con esfero) */
+            flex-grow: 1;
+            padding: 0 2px;
+            font-size: 0.9em;
+            background: transparent;
+            height: 18px;
+        }
+
+        /* Estilos para grupos de checkboxes */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .checkbox-group label {
+            font-weight: normal;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 2px;
+            transform: scale(0.9);
+        }
+
+        /* Estilos para la nota legal */
+        .legal-note {
+            padding: 10px;
+            font-size: 0.7em;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        /* Estilo de la firma */
+        .signature-area {
+            text-align: center;
+            padding-top: 30px;
+        }
+        .signature-line {
+            display: inline-block;
+            width: 50%;
+            border-top: 1px solid #000;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <h3>Unidad Educativa "Nicolás Infante Díaz"</h3>
+        <p>Innovarse es vivir</p>
+        <p>PERÍODO LECTIVO 2025 - 2026</p>
+    </div>
+
+    <form>
+        <table>
+            <tr>
+                <td>PERIODO LECTIVO 2025 - 2026</td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">
+                    <div class="field-group"><label>SECCIÓN:</label><input type="text"></div>
+                </td>
+                <td style="width: 25%;">
+                    <div class="field-group"><label>CURSO:</label><input type="text"></div>
+                </td>
+                <td style="width: 25%;">
+                    <div class="field-group"><label>PARALELO:</label><input type="text"></div>
+                </td>
+                <td style="width: 25%;"><div class="field-group"></div></td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DATOS DEL ESTUDIANTE</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>APELLIDOS Y NOMBRES DEL ESTUDIANTE:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>C.I. / PASAPORTE:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>EMAIL:</label><input type="email"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>FECHA DE NACIMIENTO:</label><input type="date"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>LUGAR DE NACIMIENTO:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>CANTÓN:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%;">
+                    <div class="field-group"><label>GÉNERO:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>INSTITUCIÓN EDUCATIVA PROCEDENCIA:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>TIPO:</label><input type="text"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DATOS DE SALUD Y DISCAPACIDAD</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>TIENE DISCAPACIDAD:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>GRADO DE DISCAPACIDAD:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>TIPO DE DISCAPACIDAD:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>PROBLEMA DE SALUD:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>DETALLE DE PROBLEMA DE SALUD:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>TOMA ALGÚN MEDICAMENTO:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>ESPECIFIQUE MEDICAMENTO:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>TIENE ALGÚN TIPO DE ALERGIA:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>DETALLE EL TIPO DE ALERGIA:</label><input type="text"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DIRECCIÓN DOMICILIARIA Y REFERENCIAS</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="field-group"><label>DIRECCIÓN DOMICILIO:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>TELÉFONO:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>REFERENCIAS DEL SECTOR:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>EN CASO DE EMERGENCIA LLAMAR A:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Mamá</label>
+                            <label><input type="checkbox"> Papá</label>
+                            <label><input type="checkbox"> Abuelos</label>
+                            <label><input type="checkbox"> Otros</label>
+                            <label>Tlf:</label><input type="tel" style="width: 80px; flex-grow: 0;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="field-group"><label>EL ESTUDIANTE VIVE CON:</label><input type="text"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DATOS DE LA MADRE</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>NOMBRE Y APELLIDOS:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>OCUPACIÓN:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>Tlf:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>C.I.:</label><input type="text"></div>
+                </td>
+                <td colspan="3">
+                    <div class="field-group"><label>DIRECCIÓN DOMICILIO:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <div class="field-group"><label>VIVE CON EL ESTUDIANTE:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> SI</label>
+                            <label><input type="checkbox"> NO</label>
+                        </div>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <div class="field-group"><label>ESTA AUTORIZADO PARA RETIRAR AL ESTUDIANTE DE LA INSTITUCIÓN:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> SI</label>
+                            <label><input type="checkbox"> NO</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="field-group"><label>DIRECCIÓN TRABAJO:</label><input type="text"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DATOS DEL PADRE</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>NOMBRE Y APELLIDOS:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>OCUPACIÓN:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>Tlf:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>C.I.:</label><input type="text"></div>
+                </td>
+                <td colspan="3">
+                    <div class="field-group"><label>DIRECCIÓN DOMICILIO:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <div class="field-group"><label>VIVE CON EL ESTUDIANTE:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> SI</label>
+                            <label><input type="checkbox"> NO</label>
+                        </div>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <div class="field-group"><label>ESTA AUTORIZADO PARA RETIRAR AL ESTUDIANTE DE LA INSTITUCIÓN:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> SI</label>
+                            <label><input type="checkbox"> NO</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="field-group"><label>DIRECCIÓN TRABAJO:</label><input type="text"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="section-title">DATOS DEL REPRESENTANTE LEGAL DEL ESTUDIANTE</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>NOMBRE Y APELLIDOS:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>PARENTESCO:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>Tlf:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>C.I.:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>OCUPACIÓN:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>VIVE CON EL ESTUDIANTE:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> SI</label>
+                            <label><input type="checkbox"> NO</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="field-group"><label>DIRECCIÓN DOMICILIO:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>CIUDAD:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>CANTÓN:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>PARROQUIA:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>SECTOR/CALLE:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>TELÉFONO DE CASA:</label><input type="tel"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>TELÉFONO TRABAJO:</label><input type="tel"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>TELÉFONO CELULAR:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>DIRECCIÓN TRABAJO:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>EMAIL:</label><input type="email"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="auth-title">
+                    EN CASO QUE NO PUEDA ASISTIR AL LLAMADO INSTITUCIONAL AUTORIZO ACTUAR COMO REPRESENTANTE LEGAL A
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="field-group"><label>NOMBRE Y APELLIDOS:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>PARENTESCO:</label><input type="text"></div>
+                </td>
+                <td colspan="1">
+                    <div class="field-group"><label>Tlf:</label><input type="tel"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field-group"><label>C.I.:</label><input type="text"></div>
+                </td>
+                <td colspan="2">
+                    <div class="field-group"><label>OCUPACIÓN:</label><input type="text"></div>
+                </td>
+                <td>
+                    <div class="field-group"><label>Tlf:</label><input type="tel"></div>
+                </td>
+            </tr>
+        </table>
+        <p class="legal-note">
+            Si por alguna razón, no puede acudir al llamado institucional ninguna de las personas que constan en el presente documento, el representante legal, deberá hacer un documento en el que indique qué persona actuará en su reemplazo, por esta única vez en calidad de representante legal y adjuntará las copias de cédulas de representante legal y persona autorizada.
+        </p>
+
+        <div class="signature-area">
+            <div class="signature-line"></div>
+            <p>FIRMA DEL REPRESENTANTE LEGAL</p>
+        </div>
+    </form>
+</div>
+
+</body>
+
+
+<H3><A NAME="soporte"><FONT COLOR="red">SOPORTE TECNICO - TRIMESTRES</FONT></A></H3>
+<H3><A NAME="Trimso">Trimestres</A></H3>
+<UL>
+ <LI><A HREF="#unoso">Trimestre#1</A>
+<LI><A HREF="#dosso">Trimestre#2</A>
+<LI><A HREF="#tresso">Trimeste#3</A>
+</UL>
+<H3><A NAME="unoso">Trimestre#1</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+<H3><A NAME="dosso">Trimestre#2</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+<H3><A NAME="tresso">Trimestre#3</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+
+<H3><A NAME="dos">Trimestre#2</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Diseño WEB</P>
+<P>Click aqui para <A href="#Trim">volver a la seccion de trimestres</A>
+
+<H3><A NAME="tres">Timestre#3</A></H3>
+<P>Esta es el Trimestre#3 del proyecto de Diseño WEB</P>
+<P>Click aqui para <A href="#Trim">volver a la seccion de trimestres</A>
+
+<H3><A NAME="programa"><FONT COLOR="yellow">PROGRAMACION Y BASE DE DATOS - TRIMESTRES</FONT></A></H3>
+<H3><A NAME="Trimpro">Trimestres</A></H3>
+<UL>
+ <LI><A HREF="#unopro">Trimestre#1</A>
+<LI><A HREF="#dospro">Trimestre#2</A>
+<LI><A HREF="#trespro">Trimeste#3</A>
+</UL>
+<H3><A NAME="unopro">Trimestre#1</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Programacion</P>
+<P>Click aqui para <A href="#Trimpro">volver a la seccion de trimestres</A>
+
+<H3><A NAME="dospro">Trimestre#2</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Programacion</P>
+<P>Click aqui para <A href="#Trimpro">volver a la seccion de trimestres</A>
+
+<H3><A NAME="dospro">Trimestre#3</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Programacion</P>
+<P>Click aqui para <A href="#Trimpro">volver a la seccion de trimestres</A>
+
+<H3><A NAME="sistemas"><FONT COLOR="orange">SISTEMAS OPERATIVOS - TRIMESTRES</FONT></A></H3>
+<H3><A NAME="Trimsi">Trimestres</A></H3>
+<UL>
+ <LI><A HREF="#unosi">Trimestre#1</A>
+<LI><A HREF="#dossi">Trimestre#2</A>
+<LI><A HREF="#tressi">Trimeste#3</A>
+</UL>
+<H3><A NAME="unosi">Trimestre#1</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Sistemas</P>
+<P>Click aqui para <A href="#Trimsi">volver a la seccion de trimestres</A>
+
+<H3><A NAME="dossi">Trimestre#2</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Sistemas</P>
+<P>Click aqui para <A href="#Trimsi">volver a la seccion de trimestres</A>
+
+<H3><A NAME="tressi">Trimestre#3</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Sistemas</P>
+<P>Click aqui para <A href="#Trimsi">volver a la seccion de trimestres</A>
+
+
+<H3><A NAME="soporte"><FONT COLOR="red">SOPORTE TECNICO - TRIMESTRES</FONT></A></H3>
+<H3><A NAME="Trimso">Trimestres</A></H3>
+<UL>
+ <LI><A HREF="#unoso">Trimestre#1</A>
+<LI><A HREF="#dosso">Trimestre#2</A>
+<LI><A HREF="#tresso">Trimeste#3</A>
+</UL>
+<H3><A NAME="unoso">Trimestre#1</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+<H3><A NAME="dosso">Trimestre#2</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+<H3><A NAME="tresso">Trimestre#3</A></H3>
+<P>Esta es el Trimestre#2 del proyecto de Soporte</P>
+<P>Click aqui para <A href="#Trimso">volver a la seccion de trimestres</A>
+
+
+
+</BODY>
+</HTML>
